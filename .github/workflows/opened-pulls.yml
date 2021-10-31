@@ -1,4 +1,4 @@
-name: Move open pull requests into In Progress
+name: Move open pull requests into 'In Progress' column in projects board
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: alex-page/github-project-automation-plus@v0.8.1
         with:
           project: Portfolio Website
           column: In Progress
