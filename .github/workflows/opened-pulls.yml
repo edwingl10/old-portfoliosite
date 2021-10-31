@@ -8,7 +8,7 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - uses: edwingl10/portfoliosite@v0.0.0
+      - uses: actions/checkout@v2
         with:
           project: Portfolio Website
           column: In Progress
