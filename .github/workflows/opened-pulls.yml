@@ -1,4 +1,4 @@
-name: Move assigned pull requests into In Progress
+name: Move open pull requests into In Progress
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - uses: edwingl10/portfoliosite
+      - uses: edwingl10/portfoliosite@v0.1
         with:
           project: Portfolio Website
           column: In Progress
