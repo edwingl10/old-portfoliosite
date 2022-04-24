@@ -1,29 +1,20 @@
-name: Feature Request
+name: Feature request
 description: Suggest an idea for this project
-title: 'Feature: '
+title: '[FR]: '
 labels: ['enhancement']
+assignees:
+  - octocat
 body:
   - type: textarea
-    id: problem-related
+    id: description
     attributes:
-      label: Is your feature request related to a problem? Please describe
-      description: A clear and concise description of what the problem is. E.g. I'm always frustrated when...
-      placeholder: description
-  - type: textarea
-    id: solution
-    attributes:
-      label: Describe the solution you'd like
-      description: A clear and concise description of what you want to happen.
-      placeholder: description
+      label: What is your feature idea?
+      description: Please describe the problem and potential solution you'd like to see.
+      placeholder: Ex. I'm always frustrated when... It would be nice if...
+    validations:
+      required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Describe alternatives you've considered
-      description: A clear and concise description of any alternative solutions or features you've considered.
-      placeholder: alternatives
-  - type: textarea
-    id: context
-    attributes:
-      label: Additional Context
-      description: Add any other context or screenshots about the feature here.
-      placeholder: additional context
+      label: What alternatives have you considered?
+      placeholder: E.g. What workarounds have you tried? Other similar feature ideas that would address the problem?
