@@ -2,46 +2,54 @@ name: Bug Report
 description: File a bug report
 title: 'Bug: '
 labels: ['bug']
+assignees:
+  - octocat
 body:
-  - type: textarea
-    id: expected-behavior
+  - type: markdown
     attributes:
-      label: Expected Behavior
-      description: A clear and concise description of what you expected to happen.
-      placeholder: description
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: textarea
-    id: screenshot
+    id: what-happened
     attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
-      placeholder: Show us what you see!
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. See error...
+    validations:
+      required: false
   - type: dropdown
-    id: OS
+    id: devices
     attributes:
-      label: Operating System
-      description: What OS are you running?
+      label: What devices are you experiencing the problem on?
+      description: Select all that apply.
+      multiple: true
       options:
-        - Windows
-        - Mac OS
-        - Linux
-        - Android
-        - IOS
-        - Other
+        - Desktop
+        - Mobile
+        - Tablet
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browsers are you seeing the problem in?
+      description: Select all that apply.
       multiple: true
       options:
-        - Firefox
         - Chrome
-        - Safari
+        - Firefox
         - Microsoft Edge
-        - Internet Explorer
+        - Safari
         - Other
-  - type: textarea
-    id: context
-    attributes:
-      label: Additional Context
-      description: Add any other context about the problem here.
-      placeholder: additional context
+    validations:
+      required: true
