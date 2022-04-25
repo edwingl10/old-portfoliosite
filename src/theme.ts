@@ -12,6 +12,9 @@ const theme = createTheme({
       default: '#fafafa',
     },
   },
+  typography: {
+    fontFamily: `"Dosis", sans-serif`,
+  },
 }) as ThemeOptions;
 
 export default theme;
