@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material';
 function App() {
   return (
     <Box className="App">
-      <Typography variant="h1">Website comming soon!</Typography>
+      <Typography variant="h1">Website coming soon!</Typography>
     </Box>
   );
 }
