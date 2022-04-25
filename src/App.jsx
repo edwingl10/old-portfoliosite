@@ -1,10 +1,23 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import {
+  CssBaseline,
+  StyledEngineProvider,
+  ThemeProvider,
+  Box,
+  Typography,
+} from '@mui/material';
+import theme from './theme';
 
 function App() {
   return (
-    <Box className="App">
-      <Typography variant="h1">Website coming soon!</Typography>
+    <Box>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+
+          <Typography variant="h1">Website coming soon!</Typography>
+        </ThemeProvider>
+      </StyledEngineProvider>
     </Box>
   );
 }
