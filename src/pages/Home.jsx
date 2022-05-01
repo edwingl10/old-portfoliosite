@@ -1,9 +1,32 @@
 import React from 'react';
-import { Container, Typography, Stack, Button, Box } from '@mui/material';
+import {
+  Container,
+  Typography,
+  Stack,
+  Button,
+  Box,
+  Link as MuiLink,
+} from '@mui/material';
 import WelcomeImg from '../img/welcome.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+
+const socialIconStyles = { '&:hover': { color: 'secondary.main' } };
+const socialLinks = {
+  linkedIn: {
+    link: 'https://www.linkedin.com/in/edwinglopez/',
+    icon: <LinkedInIcon color="primary" sx={socialIconStyles} />,
+  },
+  github: {
+    link: 'https://github.com/edwingl10',
+    icon: <GitHubIcon color="primary" sx={socialIconStyles} />,
+  },
+  mail: {
+    link: 'mailto:edwingl@uci.edu',
+    icon: <EmailIcon color="primary" sx={socialIconStyles} />,
+  },
+};
 
 export default function Home() {
   return (
@@ -24,14 +47,21 @@ export default function Home() {
             to life.
           </Typography>
 
-          <Button color="secondary" variant="contained" sx={{ mt: 2 }}>
+          <Button
+            component={MuiLink}
+            color="secondary"
+            variant="contained"
+            href="mailto:edwingl@uci.edu"
+            sx={{ mt: 2 }}>
             contact
           </Button>
 
           <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
-            <LinkedInIcon color="primary" />
-            <GitHubIcon color="primary" />
-            <EmailIcon color="primary" />
+            {Object.values(socialLinks).map((val) => (
+              <MuiLink href={val.link} target="_blank">
+                {val.icon}
+              </MuiLink>
+            ))}
           </Stack>
         </Box>
 
