@@ -11,9 +11,8 @@ export default function Home() {
       <Stack
         direction={{ xs: 'column-reverse', md: 'row' }}
         columnGap="20%"
-        rowGap={3}
         justifyContent="space-between">
-        <Box>
+        <Box sx={{ mt: 4 }}>
           <Typography variant="h3" paragraph color="primary">
             Hi, I'm{' '}
             <Box component="span" sx={{ color: 'secondary.main' }}>
@@ -29,7 +28,7 @@ export default function Home() {
             contact
           </Button>
 
-          <Stack direction="row" spacing={2} sx={{ mt: 3 }}>
+          <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
             <LinkedInIcon color="primary" />
             <GitHubIcon color="primary" />
             <EmailIcon color="primary" />

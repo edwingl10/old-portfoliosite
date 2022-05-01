@@ -1,20 +1,22 @@
-import { createTheme, ThemeOptions } from '@mui/material';
+import { createTheme, ThemeOptions, responsiveFontSizes } from '@mui/material';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#3d5a80',
+const theme = responsiveFontSizes(
+  createTheme({
+    palette: {
+      primary: {
+        main: '#3d5a80',
+      },
+      secondary: {
+        main: '#ee6c4d',
+      },
+      background: {
+        default: '#fafafa',
+      },
     },
-    secondary: {
-      main: '#ee6c4d',
+    typography: {
+      fontFamily: `"Dosis", sans-serif`,
     },
-    background: {
-      default: '#fafafa',
-    },
-  },
-  typography: {
-    fontFamily: `"Dosis", sans-serif`,
-  },
-}) as ThemeOptions;
+  })
+) as ThemeOptions;
 
 export default theme;
