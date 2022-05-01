@@ -58,7 +58,9 @@ export default function Home() {
 
           <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
             {Object.values(socialLinks).map((val) => (
-              <MuiLink href={val.link}>{val.icon}</MuiLink>
+              <MuiLink href={val.link} target="_blank">
+                {val.icon}
+              </MuiLink>
             ))}
           </Stack>
         </Box>
