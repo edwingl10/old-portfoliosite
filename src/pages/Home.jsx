@@ -30,11 +30,12 @@ const socialLinks = {
 
 export default function Home() {
   return (
-    <Container maxWidth="lg" sx={{ p: 3 }}>
+    <Container>
       <Stack
         direction={{ xs: 'column-reverse', md: 'row' }}
         columnGap="20%"
-        justifyContent="space-between">
+        justifyContent="space-between"
+        sx={{ py: 5 }}>
         <Box sx={{ mt: 4 }}>
           <Typography variant="h3" paragraph color="primary">
             Hi, I'm{' '}
@@ -72,6 +73,20 @@ export default function Home() {
           sx={{ height: { xs: 200, sm: 250 }, m: 'auto' }}
         />
       </Stack>
+
+      <Box sx={{ py: 5 }} textAlign="center">
+        <Typography variant="h4" color="primary" sx={{ mb: 4 }}>
+          I'm a dedicated software developer
+        </Typography>
+        <Container maxWidth="md">
+          <Typography>
+            I graduated from the University of California, Irvine as a Software
+            Engineer. I am a bilingual and committed developer who has
+            experience designing, implementing, debugging and testing several
+            projects in different languages, technologies and frameworks.
+          </Typography>
+        </Container>
+      </Box>
     </Container>
   );
 }
