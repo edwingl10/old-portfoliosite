@@ -3,14 +3,24 @@ import {
   Container,
   Typography,
   Stack,
+  Grid,
   Button,
   Box,
   Link as MuiLink,
+  SvgIcon,
 } from '@mui/material';
 import WelcomeImg from '../img/welcome.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import { ReactComponent as ReactIcon } from '../img/icons/react.svg';
+import { ReactComponent as JsIcon } from '../img/icons/js.svg';
+import { ReactComponent as HtmlIcon } from '../img/icons/html.svg';
+import { ReactComponent as CssIcon } from '../img/icons/css.svg';
+import { ReactComponent as JavaIcon } from '../img/icons/java.svg';
+import { ReactComponent as PythonIcon } from '../img/icons/python.svg';
+import { ReactComponent as MuiIcon } from '../img/icons/mui.svg';
+import { ReactComponent as FigmaIcon } from '../img/icons/figma.svg';
 
 const socialIconStyles = { '&:hover': { color: 'secondary.main' } };
 const socialLinks = {
@@ -26,6 +36,17 @@ const socialLinks = {
     link: 'mailto:edwingl@uci.edu',
     icon: <EmailIcon color="primary" sx={socialIconStyles} />,
   },
+};
+
+const skillsIcons = {
+  React: <ReactIcon />,
+  Javascript: <JsIcon />,
+  HTML: <HtmlIcon />,
+  CSS: <CssIcon />,
+  Java: <JavaIcon />,
+  Python: <PythonIcon />,
+  MUI: <MuiIcon />,
+  Figma: <FigmaIcon />,
 };
 
 export default function Home() {
@@ -86,6 +107,35 @@ export default function Home() {
             projects in different languages, technologies and frameworks.
           </Typography>
         </Container>
+      </Box>
+
+      <Box sx={{ py: 5 }} textAlign="center">
+        <Typography variant="h4" color="primary" sx={{ mb: 4 }}>
+          My Skills
+        </Typography>
+        <Grid container spacing={6}>
+          <Grid item direction="row" xs={12}>
+            {Object.entries(skillsIcons)
+              .splice(0, 4)
+              .map(([title, icon]) => (
+                <Box textAlign="center" sx={{ display: 'inline-block', mx: 3 }}>
+                  <SvgIcon sx={{ width: 40, height: 40 }}>{icon}</SvgIcon>
+                  <Typography>{title}</Typography>
+                </Box>
+              ))}
+          </Grid>
+
+          <Grid item direction="row" xs={12}>
+            {Object.entries(skillsIcons)
+              .splice(4, 9)
+              .map(([title, icon]) => (
+                <Box textAlign="center" sx={{ display: 'inline-block', mx: 3 }}>
+                  <SvgIcon sx={{ width: 40, height: 40 }}>{icon}</SvgIcon>
+                  <Typography>{title}</Typography>
+                </Box>
+              ))}
+          </Grid>
+        </Grid>
       </Box>
     </Container>
   );
