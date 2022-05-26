@@ -3,7 +3,6 @@ import {
   Container,
   Typography,
   Stack,
-  Grid,
   Button,
   Box,
   Link as MuiLink,
@@ -113,29 +112,22 @@ export default function Home() {
         <Typography variant="h4" color="primary" sx={{ mb: 4 }}>
           My Skills
         </Typography>
-        <Grid container spacing={6}>
-          <Grid item direction="row" xs={12}>
-            {Object.entries(skillsIcons)
-              .splice(0, 4)
-              .map(([title, icon]) => (
-                <Box textAlign="center" sx={{ display: 'inline-block', mx: 3 }}>
-                  <SvgIcon sx={{ width: 40, height: 40 }}>{icon}</SvgIcon>
-                  <Typography>{title}</Typography>
-                </Box>
-              ))}
-          </Grid>
-
-          <Grid item direction="row" xs={12}>
-            {Object.entries(skillsIcons)
-              .splice(4, 9)
-              .map(([title, icon]) => (
-                <Box textAlign="center" sx={{ display: 'inline-block', mx: 3 }}>
-                  <SvgIcon sx={{ width: 40, height: 40 }}>{icon}</SvgIcon>
-                  <Typography>{title}</Typography>
-                </Box>
-              ))}
-          </Grid>
-        </Grid>
+        <Container maxWidth="sm">
+          <Stack
+            direction="row"
+            sx={{ flexWrap: 'wrap' }}
+            rowGap={3}
+            justifyContent="center">
+            {Object.entries(skillsIcons).map(([title, icon]) => (
+              <Box
+                textAlign="center"
+                sx={{ display: 'inline-block', mx: 3, width: 65, height: 80 }}>
+                <SvgIcon fontSize="large">{icon}</SvgIcon>
+                <Typography>{title}</Typography>
+              </Box>
+            ))}
+          </Stack>
+        </Container>
       </Box>
     </Container>
   );
