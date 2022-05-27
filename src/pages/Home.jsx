@@ -122,7 +122,9 @@ export default function Home() {
               <Box
                 textAlign="center"
                 sx={{ display: 'inline-block', mx: 3, width: 65, height: 80 }}>
-                <SvgIcon fontSize="large">{icon}</SvgIcon>
+                <SvgIcon fontSize="large" color="primary">
+                  {icon}
+                </SvgIcon>
                 <Typography>{title}</Typography>
               </Box>
             ))}
