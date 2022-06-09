@@ -19,7 +19,7 @@ export default function ProjectSection() {
 
       <Grid container spacing={4} justifyContent="center" alignItems="stretch">
         {Object.keys(Projects).map((project) => (
-          <Grid key={project} item xs={10} sm={6} md={4}>
+          <Grid key={project} item xs={11} sm={6} md={4}>
             <Card>
               <CardActionArea>
                 <CardMedia
