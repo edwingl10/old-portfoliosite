@@ -20,6 +20,7 @@ import { ReactComponent as JavaIcon } from '../img/icons/java.svg';
 import { ReactComponent as PythonIcon } from '../img/icons/python.svg';
 import { ReactComponent as MuiIcon } from '../img/icons/mui.svg';
 import { ReactComponent as FigmaIcon } from '../img/icons/figma.svg';
+import ProjectSection from '../components/ProjectSection';
 
 const socialIconStyles = { '&:hover': { color: 'secondary.main' } };
 const socialLinks = {
@@ -131,6 +132,10 @@ export default function Home() {
           </Stack>
         </Container>
       </Box>
+
+      <Container>
+        <ProjectSection />
+      </Container>
     </Container>
   );
 }
