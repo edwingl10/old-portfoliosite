@@ -9,9 +9,6 @@ import {
   SvgIcon,
 } from '@mui/material';
 import WelcomeImg from '../img/welcome.png';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
 import { ReactComponent as ReactIcon } from '../img/icons/react.svg';
 import { ReactComponent as JsIcon } from '../img/icons/js.svg';
 import { ReactComponent as HtmlIcon } from '../img/icons/html.svg';
@@ -21,22 +18,7 @@ import { ReactComponent as PythonIcon } from '../img/icons/python.svg';
 import { ReactComponent as MuiIcon } from '../img/icons/mui.svg';
 import { ReactComponent as FigmaIcon } from '../img/icons/figma.svg';
 import ProjectSection from '../components/ProjectSection';
-
-const socialIconStyles = { '&:hover': { color: 'secondary.main' } };
-const socialLinks = {
-  linkedIn: {
-    link: 'https://www.linkedin.com/in/edwinglopez/',
-    icon: <LinkedInIcon color="primary" sx={socialIconStyles} />,
-  },
-  github: {
-    link: 'https://github.com/edwingl10',
-    icon: <GitHubIcon color="primary" sx={socialIconStyles} />,
-  },
-  mail: {
-    link: 'mailto:edwingl@uci.edu',
-    icon: <EmailIcon color="primary" sx={socialIconStyles} />,
-  },
-};
+import SocialLinks from '../components/SocialLinks';
 
 const skillsIcons = {
   React: <ReactIcon />,
@@ -78,13 +60,7 @@ export default function Home() {
             contact
           </Button>
 
-          <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
-            {Object.values(socialLinks).map((val) => (
-              <MuiLink href={val.link} target="_blank">
-                {val.icon}
-              </MuiLink>
-            ))}
-          </Stack>
+          <SocialLinks />
         </Box>
 
         <Box
