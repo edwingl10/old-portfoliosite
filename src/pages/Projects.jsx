@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stack, Typography, Box, Container } from '@mui/material';
 import WelcomeImg from '../img/welcome.png';
+import ProjectSection from '../components/ProjectSection';
 
 export default function Projects() {
   return (
@@ -27,6 +28,8 @@ export default function Projects() {
           sx={{ height: { xs: 200, sm: 250 }, m: 'auto' }}
         />
       </Stack>
+
+      <ProjectSection />
     </Container>
   );
 }
