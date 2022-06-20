@@ -1,11 +1,11 @@
 import React from 'react';
-import { Stack, Typography, Box, Container } from '@mui/material';
+import { Stack, Typography, Box, Container, Button } from '@mui/material';
 import WelcomeImg from '../img/welcome.png';
 import ProjectSection from '../components/ProjectSection';
 
 export default function Projects() {
   return (
-    <Container>
+    <Container sx={{ textAlign: 'center' }}>
       <Stack
         direction={{ xs: 'column-reverse', md: 'row' }}
         columnGap="20%"
@@ -30,6 +30,10 @@ export default function Projects() {
       </Stack>
 
       <ProjectSection />
+
+      <Button color="secondary" variant="contained">
+        Load More
+      </Button>
     </Container>
   );
 }

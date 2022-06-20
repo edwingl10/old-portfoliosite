@@ -11,7 +11,12 @@ import Projects from '../data/Projects';
 
 export default function ProjectSection() {
   return (
-    <Grid container spacing={4} justifyContent="center" alignItems="stretch">
+    <Grid
+      container
+      spacing={4}
+      justifyContent="center"
+      alignItems="stretch"
+      sx={{ mb: 2 }}>
       {Object.keys(Projects)
         .slice(0, 6)
         .map((project) => (

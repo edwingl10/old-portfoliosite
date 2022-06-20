@@ -121,8 +121,7 @@ export default function Home() {
           component={Link}
           to="/projects"
           color="secondary"
-          variant="contained"
-          sx={{ mt: 2 }}>
+          variant="contained">
           View More
         </Button>
       </Container>
