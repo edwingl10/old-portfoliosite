@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import theme from './theme';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
           </Router>
         </ThemeProvider>

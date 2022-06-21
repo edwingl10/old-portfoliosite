@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Typography,
@@ -109,8 +110,20 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Container>
+      <Container sx={{ py: 5, textAlign: 'center' }}>
+        <Typography variant="h4" color="primary" sx={{ mb: 4 }}>
+          Projects
+        </Typography>
+
         <ProjectSection />
+
+        <Button
+          component={Link}
+          to="/projects"
+          color="secondary"
+          variant="contained">
+          View More
+        </Button>
       </Container>
     </Container>
   );
