@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Typography, Box, Container, Button } from '@mui/material';
-import WelcomeImg from '../img/welcome.png';
+import BannerImg from '../img/projects.png';
 import ProjectSection from '../components/ProjectSection';
 
 export default function Projects() {
@@ -23,9 +23,9 @@ export default function Projects() {
 
         <Box
           component="img"
-          src={WelcomeImg}
+          src={BannerImg}
           alt="projects page"
-          sx={{ height: { xs: 200, sm: 250 }, m: 'auto' }}
+          sx={{ height: { xs: 220, sm: 270 }, m: 'auto' }}
         />
       </Stack>
 
