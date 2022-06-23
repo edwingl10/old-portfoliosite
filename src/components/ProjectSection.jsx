@@ -12,12 +12,7 @@ import PropTypes from 'prop-types';
 
 export default function ProjectSection({ projects }) {
   return (
-    <Grid
-      container
-      spacing={4}
-      justifyContent="center"
-      alignItems="stretch"
-      sx={{ mb: 2 }}>
+    <Grid container spacing={4} sx={{ mb: 2 }}>
       {projects.map((project) => (
         <Grid key={project} item xs={11} sm={6} md={4}>
           <Card>

@@ -13,7 +13,7 @@ export default function ListProjects() {
   }, [limit]);
 
   return (
-    <Container sx={{ textAlign: 'center' }}>
+    <Container>
       <Stack
         direction={{ xs: 'column-reverse', md: 'row' }}
         columnGap="20%"
@@ -39,13 +39,15 @@ export default function ListProjects() {
 
       <ProjectSection projects={Object.keys(Projects).slice(0, limit)} />
 
-      <Button
-        color="secondary"
-        variant="contained"
-        disabled={disableBtn}
-        onClick={() => setLimit(limit + limit)}>
-        Load More
-      </Button>
+      <Box textAlign="center">
+        <Button
+          color="secondary"
+          variant="contained"
+          disabled={disableBtn}
+          onClick={() => setLimit(limit + limit)}>
+          Load More
+        </Button>
+      </Box>
     </Container>
   );
 }
