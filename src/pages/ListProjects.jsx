@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Stack, Typography, Box, Container, Button } from '@mui/material';
 import BannerImg from '../img/projects.png';
 import ProjectSection from '../components/ProjectSection';
+import Projects from '../data/Projects';
 
-export default function Projects() {
+export default function ListProjects() {
+  const [limit, setLimit] = useState(6);
+  const [disableBtn, setDisableBtn] = useState(false);
+
+  useEffect(() => {
+    setDisableBtn(limit >= 10);
+  }, [limit]);
+
   return (
-    <Container sx={{ textAlign: 'center' }}>
+    <Container>
       <Stack
         direction={{ xs: 'column-reverse', md: 'row' }}
         columnGap="20%"
@@ -29,11 +37,17 @@ export default function Projects() {
         />
       </Stack>
 
-      <ProjectSection />
+      <ProjectSection projects={Object.keys(Projects).slice(0, limit)} />
 
-      <Button color="secondary" variant="contained">
-        Load More
-      </Button>
+      <Box textAlign="center">
+        <Button
+          color="secondary"
+          variant="contained"
+          disabled={disableBtn}
+          onClick={() => setLimit(limit + limit)}>
+          Load More
+        </Button>
+      </Box>
     </Container>
   );
 }
