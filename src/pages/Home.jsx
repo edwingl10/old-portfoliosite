@@ -20,6 +20,7 @@ import { ReactComponent as MuiIcon } from '../img/icons/mui.svg';
 import { ReactComponent as FigmaIcon } from '../img/icons/figma.svg';
 import ProjectSection from '../components/ProjectSection';
 import SocialLinks from '../components/SocialLinks';
+import Projects from '../data/Projects';
 
 const skillsIcons = {
   React: <ReactIcon />,
@@ -115,7 +116,7 @@ export default function Home() {
           Projects
         </Typography>
 
-        <ProjectSection />
+        <ProjectSection projects={Object.keys(Projects).slice(0, 6)} />
 
         <Button
           component={Link}

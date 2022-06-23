@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import theme from './theme';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/ListProjects';
 
 function App() {
   return (

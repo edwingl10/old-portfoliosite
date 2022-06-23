@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Stack, Typography, Box, Container, Button } from '@mui/material';
 import BannerImg from '../img/projects.png';
 import ProjectSection from '../components/ProjectSection';
+import Projects from '../data/Projects';
 
-export default function Projects() {
+export default function ListProjects() {
+  const [limit, setLimit] = useState(6);
+
   return (
     <Container sx={{ textAlign: 'center' }}>
       <Stack
@@ -29,9 +32,12 @@ export default function Projects() {
         />
       </Stack>
 
-      <ProjectSection />
+      <ProjectSection projects={Object.keys(Projects).slice(0, limit)} />
 
-      <Button color="secondary" variant="contained">
+      <Button
+        color="secondary"
+        variant="contained"
+        onClick={() => setLimit(limit + limit)}>
         Load More
       </Button>
     </Container>
