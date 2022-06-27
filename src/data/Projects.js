@@ -1,86 +1,96 @@
 import placeholderImg from '../img/placeholder.jpg';
 
-const Projects = {
-  DreamScholars: {
+const Projects = [
+  {
     id: 1,
+    name: 'DreamScholars',
     overview: 'short overview goes here',
     description: '',
     type: 'web',
     link: '',
     mainImg: placeholderImg,
   },
-  'Netflix Clone': {
+  {
     id: 2,
+    name: 'Netflix Clone',
     overview: 'short overview goes here',
     description: '',
     type: 'web',
     link: '',
     mainImg: placeholderImg,
   },
-  'Cleaning Site': {
+  {
     id: 3,
+    name: 'Cleaning Site',
     overview: 'short overview goes here',
     description: '',
     type: 'web',
     link: '',
     mainImg: placeholderImg,
   },
-  'Mobile Platformer': {
+  {
     id: 4,
+    name: 'Mobile Platformer',
     overview: 'short overview goes here',
     description: '',
     type: 'game',
     link: '',
     mainImg: placeholderImg,
   },
-  'Pacific Marine App': {
+  {
     id: 5,
+    name: 'Pacific Marine App',
     overview: 'short overview goes here',
     description: '',
     type: 'game',
     link: '',
     mainImg: placeholderImg,
   },
-  'Game Companion app ': {
+  {
     id: 6,
+    name: 'Game Companion app',
     overview: 'short overview goes here',
     description: '',
     type: 'game',
     link: '',
     mainImg: placeholderImg,
   },
-  'Search Engine': {
+  {
     id: 7,
+    name: 'Search Engine',
     overview: 'short overview goes here',
     description: '',
     type: 'other',
     link: '',
     mainImg: placeholderImg,
   },
-  'Fault Localization': {
+  {
     id: 8,
+    name: 'Fault Localization',
     overview: 'short overview goes here',
     description: '',
     type: 'other',
     link: '',
     mainImg: placeholderImg,
   },
-  'Operating System GUI': {
+  {
     id: 9,
+    name: 'Operating System GUI',
     overview: 'short overview goes here',
     description: '',
     type: 'other',
     link: '',
     mainImg: placeholderImg,
   },
-  'Weather App': {
+  {
     id: 10,
+    name: 'Weather App',
     overview: 'short overview goes here',
     description: '',
     type: 'web',
     link: '',
     mainImg: placeholderImg,
   },
-};
+];
 
 export default Projects;

@@ -116,7 +116,7 @@ export default function Home() {
           Projects
         </Typography>
 
-        <ProjectSection projects={Object.keys(Projects).slice(0, 6)} />
+        <ProjectSection projects={Projects.slice(0, 6)} />
 
         <Button
           component={Link}
