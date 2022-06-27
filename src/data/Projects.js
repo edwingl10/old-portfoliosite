@@ -2,6 +2,7 @@ import placeholderImg from '../img/placeholder.jpg';
 
 const Projects = {
   DreamScholars: {
+    id: 1,
     overview: 'short overview goes here',
     description: '',
     type: 'web',
@@ -9,6 +10,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Netflix Clone': {
+    id: 2,
     overview: 'short overview goes here',
     description: '',
     type: 'web',
@@ -16,6 +18,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Cleaning Site': {
+    id: 3,
     overview: 'short overview goes here',
     description: '',
     type: 'web',
@@ -23,6 +26,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Mobile Platformer': {
+    id: 4,
     overview: 'short overview goes here',
     description: '',
     type: 'game',
@@ -30,6 +34,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Pacific Marine App': {
+    id: 5,
     overview: 'short overview goes here',
     description: '',
     type: 'game',
@@ -37,6 +42,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Game Companion app ': {
+    id: 6,
     overview: 'short overview goes here',
     description: '',
     type: 'game',
@@ -44,6 +50,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Search Engine': {
+    id: 7,
     overview: 'short overview goes here',
     description: '',
     type: 'other',
@@ -51,6 +58,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Fault Localization': {
+    id: 8,
     overview: 'short overview goes here',
     description: '',
     type: 'other',
@@ -58,6 +66,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Operating System GUI': {
+    id: 9,
     overview: 'short overview goes here',
     description: '',
     type: 'other',
@@ -65,6 +74,7 @@ const Projects = {
     mainImg: placeholderImg,
   },
   'Weather App': {
+    id: 10,
     overview: 'short overview goes here',
     description: '',
     type: 'web',

@@ -40,6 +40,7 @@ export default function ProjectSection({ projects }) {
 ProjectSection.propTypes = {
   projects: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number,
       overview: PropTypes.string,
       description: PropTypes.string,
       type: PropTypes.string,
