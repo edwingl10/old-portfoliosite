@@ -9,6 +9,7 @@ import {
 import theme from './theme';
 import Home from './pages/Home';
 import Projects from './pages/ListProjects';
+import ViewProject from './pages/ViewProject';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/projects/:id" element={<ViewProject />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Router>

@@ -37,7 +37,7 @@ export default function ListProjects() {
         />
       </Stack>
 
-      <ProjectSection projects={Object.keys(Projects).slice(0, limit)} />
+      <ProjectSection projects={Projects.slice(0, limit)} />
 
       <Box textAlign="center">
         <Button
