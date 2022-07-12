@@ -7,15 +7,18 @@ import {
   CardContent,
   Grid,
 } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function ProjectSection({ projects }) {
+  const navigate = useNavigate();
+
   return (
     <Grid container spacing={4} sx={{ mb: 2 }}>
       {projects.map((project) => (
         <Grid key={project.id} item xs={11} sm={6} md={4}>
           <Card>
-            <CardActionArea>
+            <CardActionArea onClick={() => navigate('/projects/' + project.id)}>
               <CardMedia
                 component="img"
                 height="150"
