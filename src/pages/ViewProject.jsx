@@ -19,7 +19,8 @@ export default function ViewProject() {
       <Grid
         container
         direction={{ xs: 'column-reverse', md: 'row' }}
-        spacing={3}>
+        spacing={3}
+        sx={{ my: 5 }}>
         <Grid item xs={12} sm={6}>
           <Typography variant="h3" paragraph color="secondary">
             {project.name}
@@ -30,6 +31,7 @@ export default function ViewProject() {
 
           <Button
             component={MuiLink}
+            href={project.link}
             color="secondary"
             variant="contained"
             sx={{ mt: 2 }}>
@@ -41,7 +43,7 @@ export default function ViewProject() {
           <img
             src={PlaceholderImg}
             alt="placeholder"
-            style={{ width: '100%', height: '75%', objectFit: 'cover' }}
+            style={{ width: '90%', maxHeight: 300, objectFit: 'cover' }}
           />
         </Grid>
       </Grid>
@@ -54,12 +56,12 @@ export default function ViewProject() {
           <img
             src={PlaceholderImg}
             alt="placeholder"
-            style={{ width: '100%', height: '75%', objectFit: 'cover' }}
+            style={{ width: '90%', maxHeight: 300, objectFit: 'cover' }}
           />
         </Grid>
 
         <Grid item>
-          <Typography variant="h3" paragraph color="primary">
+          <Typography variant="h4" paragraph color="primary">
             The Project
           </Typography>
           <Typography paragraph color="primary">
