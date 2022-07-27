@@ -64,7 +64,7 @@ export default function ViewProject() {
           <Typography variant="h4" paragraph color="primary">
             The Project
           </Typography>
-          <Typography paragraph color="primary">
+          <Typography paragraph color="primary" sx={{ whiteSpace: 'pre-line' }}>
             {project.description}
           </Typography>
 
