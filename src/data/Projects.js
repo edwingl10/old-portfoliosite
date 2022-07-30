@@ -5,7 +5,7 @@ const Projects = [
     id: 1,
     name: 'DreamScholars',
     overview:
-      'A web application that facilitates discoverability and shareability of scholarships for students.',
+      'A web application that facilitates discoverability of scholarships for students.',
     description: `Dreamscholars allows users to browse scholarships and filter results by various attributes such as major, award amount, grade, state and school. Aside from adding and sharing scholarships, the site also supports English and Spanish translations. The team is contantly working on and planning to implement more features in the near future.
       
     I wear various hats while working on Dreamscholars. I primarily work on the UI and implementing the designs and functionality to the site such as the scholarship form, filtering scholarhips, etc. I have also worked on the backend functionality that allows interaction between components and the database such as saving and fetching scholarhips as well as adding security rules. Lastly, I validate the functionality of components by incorporating unit tests using Jest and React Testing Library. Apart from coding I conduct code reviews for other teammates.
@@ -51,7 +51,7 @@ const Projects = [
     id: 5,
     name: 'Pacific Marine App',
     overview:
-      'An interactive game aimed at educating vistors at the Pacific Marine Mammal Center.',
+      'An interactive game aimed at educating vistors of the Pacific Marine Mammal Center.',
     description: `This game was created to showcase and educate users the rehabilitation work the Pacific Marine Mammal Center does. It exhibits the story of 4 sea-lions and walks through their rehab process. At the end of the rehab, it shows a video of the real-life sea lion that was rescued and released.
       
       I worked on this as my capstone project with 4 other team members. I worked on the UI, designs, backend and animations as well as oversaw the progress of other team members. 
@@ -63,10 +63,9 @@ const Projects = [
   {
     id: 6,
     name: 'Game Companion app',
-    overview:
-      'A companion app to a board game I created, based on the Playstation game, Packman Fever.',
+    overview: 'A companion application to a board game I created.',
     description:
-      'Party bash supports up to 4 players and is a companion app to a board game I created based on Pacman Fever, which consists of players moving along a game board, trying to reach the finish line first. Each square contains an event such as winning/losing coins, buying actions, winning prizes, challenging and stealing coins from others. The app does calculations such as, rolling dice, keeping track of turns, managing coins and reflecting changes based on the events that users landed on.',
+      'Party bash supports up to 4 players and is a companion app to a board game I created based on the Playstation game, Pacman Fever, which consists of players moving along a game board, trying to reach the finish line first. Each square contains an event such as winning/losing coins, buying actions, winning prizes, challenging and stealing coins from others. The app does calculations such as, rolling dice, keeping track of turns, managing coins and reflecting changes based on the events that users landed on.',
     type: 'game',
     link: 'https://github.com/edwingl10/PartyBashCompanion',
     mainImg: placeholderImg,
@@ -97,9 +96,9 @@ const Projects = [
     id: 9,
     name: 'Operating System GUI',
     overview:
-      'A simple operating system that simulates multiple users writing to disks and printing files.',
+      'A simple operating system that simulates users writing to disks and printing files.',
     description:
-      'This program is written in Java and uses parallelism and threads for reading, writing and printing files. It also shows a GUI using JavaFX to demonstrates the state of disks, printers, and users. Through the GUI, we can see the content of each disk, whether a printer is idle or occupied, and if users are reading, writing or requesting to print.',
+      'This program is written in Java and uses parallelism and threads for reading, writing and printing files. It also shows a GUI using JavaFX to demonstrates the state of a dynamic number of disks, printers, and users. Through the GUI, we can see the content of each disk, whether a printer is idle or occupied, and if users are reading, writing or requesting to print.',
     type: 'other',
     link: 'https://github.com/edwingl10/OSGui',
     mainImg: placeholderImg,
