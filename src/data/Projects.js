@@ -102,8 +102,10 @@ const Projects = [
     name: 'Operating System GUI',
     overview:
       'A simple operating system that simulates users writing to disks and printing files.',
-    description: '',
-    description2: '',
+    description:
+      'This program mimics a simple OS system by managing reading, writing and printing requests by users. A GUI is used to display the requests of users, statuses of the disks and printers and the contents of the directory manager.',
+    description2:
+      'The program supports a dynamic number of users, printers and disks and uses parallelism and threads to execute commands from user files. When the save command is executed, a disk resource is requested, and the file contents are written to the disk until the end command is found. The end command also stores the disk number, starting sector and file length. A new entry is then created in the directory, and the disk resource is released. Lastly, the print command looks up the file name in the directory manager, gets a free printer, and prints the data to an external file.',
     type: 'other',
     link: 'https://github.com/edwingl10/OSGui',
     mainImg: placeholderImg,
