@@ -75,11 +75,13 @@ const Projects = [
   },
   {
     id: 7,
-    name: 'Search Engine',
+    name: 'Search-ED',
     overview:
       'A search engine of the web pages for the Information & Computer Sciences from UCI.',
-    description: '',
-    description2: '',
+    description:
+      'Search-ED is a search engine for navigating web pages from the Informations & Computer Sciences department from UCI. The program displays the top results from a given query.',
+    description2:
+      'The search engine utilizes tokenization, term frequency, inverse document frequency and weighted tags for page scoring. The BeautifulSoup library was used to parse the corpus of the entire ICS web pages from UCI. Python was used to write the program, MongoDB for the database and TKinter for the GUI.',
     type: 'other',
     link: 'https://github.com/edwingl10/Search-ED',
     mainImg: placeholderImg,
