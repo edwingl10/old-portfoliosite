@@ -57,18 +57,22 @@ const Projects = [
     name: 'Pacific Marine App',
     overview:
       'An interactive game aimed at educating vistors of the Pacific Marine Mammal Center.',
-    description: '',
-    description2: '',
+    description:
+      'A game created for displaying and educating users about the rehabilitation work the Pacific Marine Mammal Center does. The game tells the story of four sea-lions and allows the users to walkthrough the rehab process of each animal.',
+    description2:
+      'I worked on this as my capstone project for UCI with 4 other team members. The game was made with Unity, and I was responsible for the scripting, animations and level design. In addition to programming, I was also responsible for the UI, game assets and sound effects as well as overseeing the progress of the other members of my team.',
     type: 'game',
     link: 'https://github.com/edwingl10/Pacific-Marine-App',
     mainImg: placeholderImg,
   },
   {
     id: 6,
-    name: 'Game Companion app',
+    name: 'Party Bash Companion',
     overview: 'A companion application to a board game I created.',
-    description: '',
-    description2: '',
+    description:
+      'Party bash consists of players moving along a game board, trying to reach the finish line first. Each board square contains an event such as winning/losing coins, buying actions, winning prizes, challenging and stealing coins from others.',
+    description2:
+      'The app allows players to roll dice, switch turns, and perform calculations that would otherwise be tedious. Calculations include coin management, winning random prizes, challenging players, and purchasing perks.',
     type: 'game',
     link: 'https://github.com/edwingl10/PartyBashCompanion',
     mainImg: placeholderImg,
