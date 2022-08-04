@@ -9,7 +9,7 @@ const Projects = [
     description:
       'Dreamscholars is a web application for exploring, searching, adding, sharing and filtering scholarships by various attributes such as major, award amount, grade, state and school. The team is constantly working on and planning to implement more enticing features in the near future.',
     description2:
-      'I primarily work on the UI and implementing the designs and functionality to the site such as data validation, filtering scholarhips, language translation etc. I have also worked on the backend functionality that allows interaction between components and the database such as saving and fetching scholarhips and adding database security rules. Lastly, I validate the functionality of components by incorporating unit tests using Jest and React Testing Library. Apart from coding I also conduct code reviews for other teammates.',
+      'I primarily work on the UI and implementing the designs and functionality to the site such as data validation, filtering scholarships, language translation etc. I have also worked on the backend functionality that allows interaction between components and the database such as saving and fetching scholarships and adding database security rules. Lastly, I validate the functionality of components by incorporating unit tests using Jest and React Testing Library. Apart from coding I also conduct code reviews for other teammates.',
     type: 'web',
     link: 'https://dreamscholars.org/',
     mainImg: placeholderImg,
@@ -99,7 +99,7 @@ const Projects = [
     description:
       'This program implements the Tarantula approach to perform fault localization and locate which lines of code are most suspect of breaking the unit-tests from an open-source project on Github.',
     description2:
-      'This program contains over 4 thousand XML files with code coverage analysis. For this algorithm, we look at the test cases that cover each line in the program and compare the ratio of succeeding and failing test cases. The higher the ratio of failing tests cases compared to successful ones, the higher the suspiciousness of that line. Suspiciousness is a number between 0 and 1, where a higher number means a higher change that the line caused a test to fail.',
+      'This program contains over 4 thousand XML files with code coverage analysis. For this algorithm, we look at the test cases that cover each line in the program and compare the ratio of succeeding and failing test cases. The higher the ratio of failing tests cases compared to successful ones, the higher the suspiciousness of that line. Suspiciousness is a number between 0 and 1, where a higher number means a higher chance that the line caused a test to fail.',
     type: 'other',
     link: 'https://github.com/edwingl10/fault-localization',
     mainImg: placeholderImg,
@@ -123,7 +123,7 @@ const Projects = [
     overview:
       'A website to search and view weather information from various locations.',
     description:
-      'Info Weather is a simple website that displays the current weather and forecast of any location.',
+      'Info Weather is a simple website that displays the current weather and forecast of any given location.',
     description2:
       'Info Weather is written with React and fetches the information from the OpenWeather API and displays the information in a minimalistic way. In addition, the site determines the appropriate icons based on the weather.',
     type: 'web',

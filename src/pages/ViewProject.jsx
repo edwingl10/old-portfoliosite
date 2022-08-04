@@ -30,6 +30,7 @@ export default function ViewProject() {
           <Button
             component={MuiLink}
             href={project.link}
+            target="_blank"
             color="secondary"
             variant="contained"
             sx={{ mt: 2 }}>
