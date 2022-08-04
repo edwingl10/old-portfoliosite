@@ -26,8 +26,12 @@ export default function ProjectSection({ projects }) {
                 alt="placeholder image"
               />
               <CardContent>
-                <Typography textAlign="left">{project.name}</Typography>
-                <Typography textAlign="left">{project.overview}</Typography>
+                <Typography textAlign="left" paragraph>
+                  {project.name}
+                </Typography>
+                <Typography textAlign="left" variant="body2">
+                  {project.overview}
+                </Typography>
               </CardContent>
             </CardActionArea>
           </Card>

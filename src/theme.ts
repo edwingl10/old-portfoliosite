@@ -14,7 +14,7 @@ const theme = responsiveFontSizes(
       },
     },
     typography: {
-      fontFamily: `"Dosis", sans-serif`,
+      fontFamily: "'Sora', sans-serif",
     },
   })
 ) as ThemeOptions;
