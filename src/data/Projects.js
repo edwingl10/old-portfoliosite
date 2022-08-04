@@ -18,7 +18,7 @@ const Projects = [
     id: 2,
     name: 'Nedflix',
     overview:
-      'A web application for exploring, discovering nad listing movies and shows.',
+      'A web application for exploring, discovering and listing movies and shows.',
     description:
       'Nedflix allows users to browse, search and watch trailers. Users can discover movies and shows by most trending, top rated and other popular categories. To easily track their favorites, users can also add/remove movies and shows to their personal list.',
     description2:
@@ -59,7 +59,7 @@ const Projects = [
     overview:
       'An interactive game aimed at educating vistors of the Pacific Marine Mammal Center.',
     description:
-      'A game created for displaying and educating users about the rehabilitation work the Pacific Marine Mammal Center does. The game tells the story of four sea-lions and allows the users to walkthrough the rehab process of each animal.',
+      'A game created for displaying and educating users about the rehabilitation work the Pacific Marine Mammal Center does. The game tells the story of four sea-lions and allows users to walkthrough the rehab process of each animal.',
     description2:
       'I worked on this as my capstone project for UCI with 4 other team members. The game was made with Unity, and I was responsible for the scripting, animations and level design. In addition to programming, I was also responsible for the UI, game assets and sound effects as well as overseeing the progress of the other members of my team.',
     type: 'game',
