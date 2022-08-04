@@ -46,8 +46,9 @@ const Projects = [
     overview:
       'An endless action mobile platformer game available on the Google play store.',
     description:
-      'TRAPD is an action platformer where the goal of the game is to survive as long as possible while dodging obstacles, cannons and lasers. The game offers various playable characters, each with different supers to aid them in game. By collecting coins, players can upgrade their abilities and purchase new characters.',
-    description2: '',
+      'TRAPD is an action platformer where the goal of the game is to survive as long as possible while dodging obstacles, cannons and lasers. The game offers various playable characters, each with different supers to aid them in game. There are various coins, each with a different value and XP, as well as obstacles that appear randomly in the game.',
+    description2:
+      "TRAPD is my most ambitious solo project and it's free to download on the Google play store. Players' progress and high scores are automatically saved and tracked, and transactions are supported. With coins, players can upgrade their character abilities and purchase new characters. The UI, animations, scripting, game assets/sprites, and music were all created by me.",
     type: 'game',
     link: 'https://play.google.com/store/apps/details?id=com.Edlo.Trapd&hl=en_US&gl=US',
     mainImg: placeholderImg,
