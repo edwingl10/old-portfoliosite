@@ -33,7 +33,7 @@ export default function ViewProject() {
             color="secondary"
             variant="contained"
             sx={{ mt: 2 }}>
-            Website
+            Explore
           </Button>
         </Grid>
 
